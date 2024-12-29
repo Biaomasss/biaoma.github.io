@@ -1,18 +1,16 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 添加平滑滚动效果 */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Page body */
+/* 基本样式保持不变 */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* Navigation bar */
+/* 导航栏 */
 nav {
     background-color: #333;
     color: white;
@@ -58,12 +56,23 @@ nav .nav-links li a:hover {
     text-decoration: underline;
 }
 
-/* Home Section */
+/* 每个部分的样式 */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* 首页 */
 #home {
     background-color: #007BFF;
     color: white;
-    padding: 120px 0;
     text-align: center;
+    padding: 120px 0;
 }
 
 #home h1 {
@@ -75,101 +84,45 @@ nav .nav-links li a:hover {
     font-size: 20px;
 }
 
-/* About Section */
-#about {
-    padding: 80px 0;
-    text-align: center;
+/* 图库部分 */
+#gallery .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 其余部分 */
+#about, #research, #publications, #news {
     background-color: #fff;
 }
 
-#about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #f9f9f9;
-    padding: 80px 0;
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.project {
-    background-color: white;
-    padding: 30px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.project h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.project p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.project a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Section */
-#contact {
-    padding: 80px 0;
-    background-color: white;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#contact ul {
+ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
-#contact ul li {
+ul li {
     margin: 10px 0;
 }
 
-#contact ul li a {
-    font-size: 18px;
-    color: #333;
+ul li a {
+    color: #007BFF;
     text-decoration: none;
 }
 
-#contact ul li a:hover {
+ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* 页脚 */
 footer {
     background-color: #333;
     color: white;
