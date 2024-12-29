@@ -1,9 +1,13 @@
-// 示例：将页面滚动到相应的部分
+// 平滑滚动到对应部分
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        const targetId = this.getAttribute('href').substring(1); // 获取去除#后的id
+        const targetElement = document.getElementById(targetId);
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
     });
 });
