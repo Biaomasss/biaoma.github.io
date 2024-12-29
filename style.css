@@ -1,73 +1,153 @@
-/* 基本样式 */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Page body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation bar */
 nav {
     background-color: #333;
-    padding: 10px;
+    color: white;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav .container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 0 20px;
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul li a {
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+}
+
+nav .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+nav .nav-links li a:hover {
     text-decoration: underline;
 }
 
-/* 页面内容 */
-section {
-    padding: 60px 20px 20px;
-    margin-top: 50px;
-}
-
-#about {
+/* Home Section */
+#home {
+    background-color: #007BFF;
+    color: white;
+    padding: 120px 0;
     text-align: center;
 }
 
-#projects .project-list {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-#projects .project {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
+#home p {
+    font-size: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
 }
 
 #projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project {
+    background-color: white;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background-color: white;
     text-align: center;
 }
 
-#contact {
-    text-align: center;
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 #contact ul {
@@ -80,11 +160,19 @@ section {
 }
 
 #contact ul li a {
+    font-size: 18px;
     color: #333;
     text-decoration: none;
-    font-size: 18px;
 }
 
 #contact ul li a:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
