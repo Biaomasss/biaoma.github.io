@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的个人网站</title>
+    <title>个人主页 - [您的名字]</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- 导航栏 -->
     <nav>
-        <ul>
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#projects">项目</a></li>
-            <li><a href="#contact">联系我</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">
+                <a href="#">[您的名字]</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <!-- 首页内容 -->
+    <section id="home">
+        <div class="container">
+            <h1>你好，我是 [您的名字]</h1>
+            <p>欢迎来到我的个人网站！我是[您的职业/研究领域]，并热衷于[兴趣/研究方向]。</p>
+        </div>
+    </section>
 
     <!-- 关于我 -->
     <section id="about">
-        <h1>你好，我是 [你的名字]</h1>
-        <p>这里是我的简介。你可以在这里添加个人介绍，背景，兴趣等内容。</p>
+        <div class="container">
+            <h2>关于我</h2>
+            <p>我是一名 [您的职位/研究方向]。在这里，我分享我的项目和研究。我对[您感兴趣的领域]充满热情，致力于[相关领域的目标或成就]。</p>
+        </div>
     </section>
 
-    <!-- 项目 -->
+    <!-- 项目展示 -->
     <section id="projects">
-        <h2>我的项目</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>项目 1</h3>
-                <p>项目描述...</p>
-            </div>
-            <div class="project">
-                <h3>项目 2</h3>
-                <p>项目描述...</p>
+        <div class="container">
+            <h2>我的项目</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>项目 1</h3>
+                    <p>这是项目 1 的简要描述。它展示了[项目的目标和成果]。</p>
+                    <a href="#">查看详情</a>
+                </div>
+                <div class="project">
+                    <h3>项目 2</h3>
+                    <p>这是项目 2 的简要描述。它展示了[项目的目标和成果]。</p>
+                    <a href="#">查看详情</a>
+                </div>
+                <div class="project">
+                    <h3>项目 3</h3>
+                    <p>这是项目 3 的简要描述。它展示了[项目的目标和成果]。</p>
+                    <a href="#">查看详情</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- 联系我 -->
     <section id="contact">
-        <h2>联系我</h2>
-        <p>你可以通过以下方式联系我：</p>
-        <ul>
-            <li><a href="https://github.com/[你的GitHub用户名]" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/[你的LinkedIn用户名]" target="_blank">LinkedIn</a></li>
-        </ul>
+        <div class="container">
+            <h2>联系我</h2>
+            <p>你可以通过以下方式联系我：</p>
+            <ul>
+                <li><a href="https://github.com/[您的GitHub用户名]" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/[您的LinkedIn用户名]" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:[您的电子邮件]">Email</a></li>
+            </ul>
+        </div>
     </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [您的名字]. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
