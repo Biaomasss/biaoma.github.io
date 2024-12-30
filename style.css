@@ -3,11 +3,30 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 基本样式保持不变 */
+/* 确保整个页面的文本都左对齐 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     color: #333;
+    text-align: left; /* 使整个页面文本左对齐 */
+}
+
+/* 特定元素的左对齐 */
+h1, p {
+    text-align: left; /* 确保 h1 和 p 元素文本左对齐 */
+    margin: 0;  /* 可选：移除段落默认的边距 */
+}
+
+/* 标题和段落样式 */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px; /* 适当的底部边距 */
 }
 
 /* 导航栏 */
